@@ -1,15 +1,15 @@
-# WP-LABS
-Windows programming laboratory work
+### WP-LABS
+##Windows programming laboratory work
 
-Ide Used :
+##Ide Used :
 
 Codeblocks
 
-Programming Language :
+##Programming Language :
 
 C++
 
-Personal info :
+##Personal info :
 
 St. Tanașciuc Macarie
 Gr. FAF-151
