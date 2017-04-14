@@ -1,16 +1,16 @@
 ### Laboratory work 1 :
-##Title
+Title
 -----
-##Window. Window handling.
-##Introduction
+Window. Window handling.
+Introduction
 ------------
-#Main purposes of this lab work:
+Main purposes of this lab work:
 
 •understand Event-Driven Programming.
 
 •study Win32 API.
 
-#What was implemented?
+What was implemented?
 --------------------
 •Created a Windows application
 
@@ -21,5 +21,5 @@
 •Added 2 buttons to window: one with default styles, one with custom styles (background, text color)
 
 •Added 2 text elements to window: one with default styles, one with custom styles (background, text color, font, size)
-#Implementaiton:
+Implementaiton:
 •When buttons are pressed the text in the center and the text on the buttons change font,the color of background changes as well 
