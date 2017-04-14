@@ -231,6 +231,9 @@ release/moc_mainwindow.cpp: D:/University\ Programs/QT/5.8/mingw53_32/include/Qt
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qmainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QString \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QSlider \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qslider.h \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qabstractslider.h \
 		../Winlab2/mainwindow.h \
 		release/moc_predefs.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/bin/moc.exe
@@ -382,7 +385,10 @@ release/main.o: ../Winlab2/main.cpp ../Winlab2/mainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QMainWindow \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qmainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
-		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QString
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QString \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QSlider \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qslider.h \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qabstractslider.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Winlab2\main.cpp
 
 release/mainwindow.o: ../Winlab2/mainwindow.cpp ../Winlab2/mainwindow.h \
@@ -515,7 +521,10 @@ release/mainwindow.o: ../Winlab2/mainwindow.cpp ../Winlab2/mainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QMainWindow \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qmainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
-		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QString
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QString \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QSlider \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qslider.h \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qabstractslider.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\Winlab2\mainwindow.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 

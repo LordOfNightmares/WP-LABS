@@ -9,6 +9,7 @@
 #include <QScrollArea>
 #include <QMainWindow>
 #include <QString>
+#include <QSlider>
 
 class MainWindow : public QMainWindow
 {
@@ -16,12 +17,11 @@ class MainWindow : public QMainWindow
 
 public:
     //static default sizes
-    int w=QApplication::desktop()->availableGeometry().width();
-    int h=QApplication::desktop()->availableGeometry().height();
-    int windW=640;
-    int windH=480;
-
-    CreateButton(QString text,int xpos=0,int ypos=0);
+    int deskw=QApplication::desktop()->availableGeometry().width();
+    int deskh=QApplication::desktop()->availableGeometry().height();
+    int windw=640;
+    int windh=480;
+    //CreateButton(QPushButton* btn,QString text,int xpos=0,int ypos=0);
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
 /*----------------------------------methods applied for click events-----------------------------*/
