@@ -13,7 +13,6 @@ Basics of Working With Keyboard.
 * Dialog Boxes
 
 ## What was implemented?
---------------------
 •Created a Windows application what will dispaly a dialog box on some event.
 
 •Added a listbox that changes its color based on items in it.
