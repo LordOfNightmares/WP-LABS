@@ -1,6 +1,6 @@
 ### Laboratory work 2 :
 Title
-------------
+-----
 Advanced Form Elements. Child Windowses. 
 Basics of Working With Keyboard.
 ------------
