@@ -10,7 +10,12 @@
 #include <QMainWindow>
 #include <QString>
 #include <QSlider>
-
+#include <QLabel>
+#include <QGridLayout>
+#include <QComboBox>
+#include <QListWidget>
+#include <QMenuBar>
+#include <QMessageBox>
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -21,13 +26,24 @@ public:
     int deskh=QApplication::desktop()->availableGeometry().height();
     int windw=640;
     int windh=480;
-    //CreateButton(QPushButton* btn,QString text,int xpos=0,int ypos=0);
+    QPushButton* CreateButton(QString);
     MainWindow(QWidget *parent = 0);
+    QSlider* slider=nullptr;
+    QLabel* label;
+    QGridLayout* layout;
+    int getsliderval;
+    QListWidget* listt;
     ~MainWindow();
+
+public slots:
+    void itclick();
+    void help();
+    void ok();
 /*----------------------------------methods applied for click events-----------------------------*/
 private slots:
    void showscroll();
    void keyPressEvent(QKeyEvent*);
+   void sliderValueChanged(int value);
 
 };
 

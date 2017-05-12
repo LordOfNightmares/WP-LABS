@@ -196,6 +196,7 @@ Makefile: ../Winlab2/Winlab2.pro D:/University\ Programs/QT/5.8/mingw53_32/mkspe
 		D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/qt_config.prf \
 		D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/toolchain.prf \
 		D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/default_pre.prf \
@@ -361,6 +362,7 @@ D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/qt_functions.prf:
 D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/qt_config.prf:
 D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/win32-g++/qmake.conf:
 D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/exclusive_builds.prf:
 D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/toolchain.prf:
 D:/University\ Programs/QT/5.8/mingw53_32/mkspecs/features/default_pre.prf:
