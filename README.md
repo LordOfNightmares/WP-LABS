@@ -4,6 +4,7 @@
 ## Ide Used :
 
 Codeblocks
+QT
 
 ## Programming Language :
 
