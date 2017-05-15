@@ -3,8 +3,9 @@
 
 ## Ide Used :
 
-Codeblocks
-QT
+•Codeblocks
+
+•QT
 
 ## Programming Language :
 
