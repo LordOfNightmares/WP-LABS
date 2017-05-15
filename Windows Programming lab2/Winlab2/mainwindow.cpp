@@ -21,9 +21,10 @@ MainWindow::MainWindow(QWidget *parent):QMainWindow(parent)
     QWidget *centralWidget = new QWidget(this);
     layout = new QGridLayout(centralWidget);
     layout->setMargin(0);
+     setCentralWidget(centralWidget);
 //    layout->setRowStretch(1, 1);
 //     layout->setRowStretch(2, 10);
-    setCentralWidget(centralWidget);
+
 
     //QScrollArea* List = new QScrollArea(this);
     listt=new QListWidget(this);

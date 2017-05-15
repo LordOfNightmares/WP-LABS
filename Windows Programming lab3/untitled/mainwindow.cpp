@@ -9,6 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     this->setGeometry(40,40,geometry().width()+200,geometry().height()+200);
     painted=true;
+    connect(CreateButton("text"),QPushButton::clicked,this,MainWindow::createwindow);
+
 
 
 
@@ -17,10 +19,37 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
 }
+void MainWindow::createwindow(){
+    window.resize(this->geometry().width(), this->geometry().height());
+    window.setWindowTitle
+          (QApplication::translate("childwidget", "Child widget"));
+    window.show();
+    //connect(&window,Q,this,SLOT(repaint()));
+
+}
+void MainWindow::debug()
+{
+    qDebug()<<SIGNAL(clicked());
+}
+
+QPushButton* MainWindow::CreateButton(QString text)
+{
+     QPushButton* btn=new QPushButton(this);
+    //creating button
+    //this->addWidget(btn,Qt::AlignRight);
+    btn->setStyleSheet("background: rgb(255,30,36);");//set style of button CSS format
+    btn->move(geometry().width()-btn->width(), btn->y());        //button possition
+    btn->setText(text);//button txt
+    btn->show();
+
+    return btn;
+}
 void MainWindow::keyPressEvent(QKeyEvent *ke)
 { if(ke->key()==Qt::Key_F5) {painted=true;
     repaint();}
 }
+
+
 void MainWindow::mousePressEvent(QMouseEvent *me)
 {if(me->button()==Qt::LeftButton){
     mousepoly<<me->pos();
@@ -38,7 +67,6 @@ void MainWindow::mousePressEvent(QMouseEvent *me)
 }
 void MainWindow::paintEvent(QPaintEvent *event)
 {
-            qDebug()<<"paint";
     if (painted){
 
     //QWidget *l=new QWidget(this);
@@ -84,6 +112,12 @@ void MainWindow::paintEvent(QPaintEvent *event)
     QPolygon polyg;
     polyg<<QPoint(20,400)<<QPoint(100,300)<<QPoint(150, 350)<<QPoint(100, 400);
     painter->drawPolygon(polyg);
+    QRadialGradient colorr(100,500,50);
+    colorr.setColorAt(0,QColor(255,0,0));
+    colorr.setColorAt(1,QColor(0,255,200));
+    painter->setBrush(colorr);
+    painter->drawEllipse(75,475,50,50);
+
     //mouse
     if (mousepoly.length()) painter->drawPolygon(mousepoly);
     //mouse2

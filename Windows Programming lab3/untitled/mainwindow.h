@@ -1,5 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include "window2.h"
 
 #include <QMainWindow>
 #include <QWidget>
@@ -7,6 +8,8 @@
 #include <QKeyEvent>
 #include<QPainter>
 #include<QDebug>
+#include <QRadialGradient>
+#include <QPushButton>
 namespace Ui {
 class MainWindow;
 }
@@ -24,10 +27,15 @@ public:
     QPolygon mousepoly;
     QPoint center,radius;
     int m=0;
+    void createwindow();
+     Window2 window;
+
+    QPushButton* CreateButton(QString);
 private:
     Ui::MainWindow *ui;
 private slots:
-     void keyPressEvent(QKeyEvent*);
+    void debug();
+    void keyPressEvent(QKeyEvent*);
      void mousePressEvent(QMouseEvent*);
 };
 

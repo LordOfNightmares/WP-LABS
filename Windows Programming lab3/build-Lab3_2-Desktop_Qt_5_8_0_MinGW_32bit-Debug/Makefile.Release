@@ -217,6 +217,9 @@ release/moc_mainwindow.cpp: D:/University\ Programs/QT/5.8/mingw53_32/include/Qt
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtGui/qtextoption.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtGui/qpen.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QDebug \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QLabel \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qlabel.h \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qframe.h \
 		../Lab3_2/mainwindow.h \
 		release/moc_predefs.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/bin/moc.exe
@@ -360,6 +363,9 @@ release/main.o: ../Lab3_2/main.cpp ../Lab3_2/mainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtGui/qtextoption.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtGui/qpen.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QDebug \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QLabel \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qlabel.h \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qframe.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QApplication \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qapplication.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -486,6 +492,9 @@ release/mainwindow.o: ../Lab3_2/mainwindow.cpp ../Lab3_2/mainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtGui/qtextoption.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtGui/qpen.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QDebug \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QLabel \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qlabel.h \
+		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qframe.h \
 		ui_mainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtCore/QVariant \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QAction \
@@ -504,7 +513,6 @@ release/mainwindow.o: ../Lab3_2/mainwindow.cpp ../Lab3_2/mainwindow.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qgraphicsview.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qscrollarea.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qframe.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qgraphicsscene.h \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/QHeaderView \
 		D:/University\ Programs/QT/5.8/mingw53_32/include/QtWidgets/qheaderview.h \

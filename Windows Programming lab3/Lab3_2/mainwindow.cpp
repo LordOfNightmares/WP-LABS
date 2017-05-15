@@ -7,11 +7,20 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
 
+    QWidget *centralWidget = new QWidget(this);
+    layout = new QGridLayout(centralWidget);
+    layout->setMargin(0);
+    setCentralWidget(centralWidget);
 
-    QPixmap pixmap("background.png");
-    QRegion exposed;
-    pixmap.load("background.png");
-    pixmap.scroll(10, 10, pixmap.rect(), &exposed);
+       QPixmap pix("C:\\Random_pyramids.jpg");
+
+       QLabel *sampleIconLabel = new QLabel();
+
+       QPixmap scaledPixmap = pix.scaledToWidth(500, Qt::SmoothTransformation);
+       this->resize(scaledPixmap.width(),scaledPixmap.height());
+       sampleIconLabel ->setPixmap(scaledPixmap);
+       layout-> addWidget(sampleIconLabel);
+
 
 
 
