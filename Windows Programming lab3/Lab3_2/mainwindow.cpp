@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     layout->setMargin(0);
     setCentralWidget(centralWidget);
 
-       QPixmap pix("C:\\Random_pyramids.jpg");
+       QPixmap pix("C:\\Users\\Sea of Chaos\\Desktop\\University\\WP labs git\\WP-LABS\\Windows Programming lab3\\untitled\\Random.jpg");
 
        QLabel *sampleIconLabel = new QLabel();
 

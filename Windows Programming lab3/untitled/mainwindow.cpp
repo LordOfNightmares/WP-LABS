@@ -11,9 +11,6 @@ MainWindow::MainWindow(QWidget *parent) :
     painted=true;
     connect(CreateButton("text"),QPushButton::clicked,this,MainWindow::createwindow);
 
-
-
-
 }
 
 MainWindow::~MainWindow()
