@@ -6,7 +6,8 @@
 /folder/*
 folder/*
 **/folder/ 
-folder/ 
+folder/
+folder
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
