@@ -4,7 +4,6 @@
 #include <QWidget>
 #include <QGridLayout>
 #include <QKeyEvent>
-#include <QPainter>
 #include <QDebug>
 #include <QRadialGradient>
 #include <QPushButton>

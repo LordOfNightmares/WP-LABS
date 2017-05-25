@@ -230,6 +230,14 @@ debug/main.o: ../Wplab4/main.cpp ../Wplab4/ball.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsItem \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsitem.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/QDebug \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsView \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsview.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qscrollarea.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qframe.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsscene.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsScene \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtGui/QKeyEvent \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QApplication \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qapplication.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -237,8 +245,6 @@ debug/main.o: ../Wplab4/main.cpp ../Wplab4/ball.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtGui/qguiapplication.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtGui/qinputmethod.h \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsScene \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsscene.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QStyleOption \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qstyleoption.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qabstractspinbox.h \
@@ -251,12 +257,7 @@ debug/main.o: ../Wplab4/main.cpp ../Wplab4/ball.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qtabbar.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qrubberband.h \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qframe.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsView \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsview.h \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qscrollarea.h \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/QTimer \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/qtimer.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/qbasictimer.h
@@ -376,7 +377,15 @@ debug/ball.o: ../Wplab4/ball.cpp ../Wplab4/ball.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtGui/qpen.h \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsItem \
 		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsitem.h \
-		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/QDebug
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtCore/QDebug \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsView \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsview.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qscrollarea.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qframe.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/qgraphicsscene.h \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtWidgets/QGraphicsScene \
+		D:/University\ Programs/Qt(community)/5.8/mingw53_32/include/QtGui/QKeyEvent
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ball.o ..\Wplab4\ball.cpp
 
 ####### Install
