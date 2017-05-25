@@ -1,14 +1,7 @@
 #Ignore dirs
-#**/bin/**
-#**/obj/**
+*/bin/*
+*/obj/*
 #**/build*/**
-*/folder/*
-/folder/*
-folder/*
-**/folder/ 
-folder/
-folder
-/folder/
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
