@@ -12,7 +12,7 @@ $RECYCLE.BIN/
 **/build*/**
 folder/*
 */folder/*
-/folder/*
+folder/*
 
 # Windows Installer files
 *.cab
