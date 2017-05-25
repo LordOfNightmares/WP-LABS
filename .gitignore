@@ -10,7 +10,7 @@ $RECYCLE.BIN/
 **/bin/**
 **/obj/**
 **/build*/**
-*folder/*
+folder/*
 
 # Windows Installer files
 *.cab
