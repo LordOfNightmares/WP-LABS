@@ -11,8 +11,7 @@ Ball::Ball(QColor color,int radius,int x,int y){
     this->y=scenePos().y();
     this->speedx=-0.1+rand()%10;
     this->speedy=-0.1+rand()%10;
-   // this->scene()->
-    qDebug() <<scene()->sceneRect();
+
 
 }
 void Ball::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
@@ -39,7 +38,7 @@ QPainterPath Ball::shape() const
 {
 
     QPainterPath path;
-    path.addRect(-20, -20, 40, 40);
+    path.addRect(0,0, 50, 50);
     return path;
 }
 
@@ -61,25 +60,28 @@ void Ball::advance(int step)
     ay=speedy+1/(1+rand()%10);
    //
     //scene()->it
-    if(cx<=-100) {speedx*=-1;if (speedx>=-100) speedy=ay;}
-    if(cx>=+100) {speedx*=-1;if (speedx<=100) speedy=ay;}
-    if(cy>=+100) {speedy*=-1;if (speedx<=100) speedx=ax;}
-    if(cy<=-100) {speedy*=-1;if (speedy>=-100) speedx=ax;}
+    if(cx<=-150) {speedx*=-1;if (speedx>=-150) speedy=ay;}
+    if(cx>=+125) {speedx*=-1;if (speedx<=125) speedy=ay;}
+    if(cy>=+125) {speedy*=-1;if (speedx<=125) speedx=ax;}
+    if(cy<=-150) {speedy*=-1;if (speedy>=-150) speedx=ax;}
 
     ///qDebug() << scenePos().x()<< scenePos().y();
-   /* QList<QGraphicsItem *> colision = scene()->collidingItems(this);
+    QList<QGraphicsItem *> colision = scene()->collidingItems(this);
 
     foreach (QGraphicsItem *item, colision) {
         if (item == this)
             continue;
-            speedx*=-1;
-            speedy*=-1;
-        if(this->radius> ((Ball*)item)->radius){
+        if(this->radius>=((Ball*)item)->radius && colision.size()<=1){
+
             //scene()->addItem(new Ball(QColor(255,0,0),50,0,0));
             qDebug()<<colision.size();
         }
+        speedx*=-1;
+        if (speedx>=-125) speedy=ay;
+        speedy*=-1;
+        if (speedy<=125) speedx=ax;
 
-        }*/
+        }
 
     setPos(cx,cy);
 

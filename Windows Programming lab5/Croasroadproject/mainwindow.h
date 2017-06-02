@@ -2,12 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QWidget>
-#include <QGridLayout>
-#include <QKeyEvent>
 
-#include<QDebug>
-#include <QLabel>
 namespace Ui {
 class MainWindow;
 }
@@ -18,7 +13,6 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    QGridLayout* layout;
     ~MainWindow();
 
 private:
