@@ -7,6 +7,8 @@
 #include <QPainter>
 
 
+
+
 class TrafficLight:public QGraphicsPixmapItem
 {
 public:
@@ -19,6 +21,7 @@ public:
     static const int RIGHT = 3;
     TrafficLight();
     int x,y,dir,state,laststate;
+    int getstate();
     TrafficLight(int, int, int,int);
     QRectF boundingRect() const override;
     QPainterPath shape() const override;

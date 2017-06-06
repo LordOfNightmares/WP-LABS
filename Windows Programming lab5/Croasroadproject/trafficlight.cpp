@@ -1,5 +1,6 @@
 #include "trafficlight.h"
 
+
 TrafficLight::TrafficLight()
 {
 
@@ -11,6 +12,7 @@ TrafficLight::TrafficLight(int x, int y, int dir,int state)
     this->state=state;
     this->laststate=state;
     this->dir=dir;
+
 
 }
 void TrafficLight::operator ++(int){
@@ -26,27 +28,29 @@ void TrafficLight::operator ++(int){
 }
 void TrafficLight::paint(QPainter *painter, const QStyleOptionGraphicsItem * qs, QWidget * qw)
 {
+
     QString img;
         switch(this->state)
         {   case RED:
-            img="C:\\Users\\Sea of Chaos\\Desktop\\University\\WP labs git\\WP-LABS\\Windows Programming lab5\\Croasroadproject\\Red.png";
+            img=":/Red.png";
             break;
             case YELLOW:
-            img="C:\\Users\\Sea of Chaos\\Desktop\\University\\WP labs git\\WP-LABS\\Windows Programming lab5\\Croasroadproject\\Yellow.png";
+            img=":/Yellow.png";
             break;
              case GREEN:
-            img="C:\\Users\\Sea of Chaos\\Desktop\\University\\WP labs git\\WP-LABS\\Windows Programming lab5\\Croasroadproject\\Green.png";
+            img=":/Green.png";
             break;
         }
         QPixmap pix(img);
         pix = pix.scaledToWidth(20, Qt::SmoothTransformation);
         switch(dir)
-        { case UP:pix = pix.transformed(QTransform().rotate(0));break;
-          case DOWN:pix = pix.transformed(QTransform().rotate(180));break;
-          case LEFT:pix = pix.transformed(QTransform().rotate(90));break;
-          case RIGHT:pix = pix.transformed(QTransform().rotate(270));break;
+        { case UP:this->setPos(x+55,y+55);pix = pix.transformed(QTransform().rotate(0));break;
+          case DOWN:this->setPos(x-115,y-150);pix = pix.transformed(QTransform().rotate(180));break;
+          case LEFT:this->setPos(x-150,y+55);pix = pix.transformed(QTransform().rotate(90));break;
+          case RIGHT:this->setPos(x+55,y-115);pix = pix.transformed(QTransform().rotate(270));break;
        }
         this->setPixmap(pix);
+
      QGraphicsPixmapItem::paint(painter,qs,qw);
 
 }
@@ -64,4 +68,5 @@ void TrafficLight::advance(int step)
 {
 
 }
-
+int TrafficLight::getstate()
+{return state;}

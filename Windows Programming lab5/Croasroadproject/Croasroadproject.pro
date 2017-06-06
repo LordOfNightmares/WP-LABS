@@ -25,12 +25,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
     trafficlight.cpp \
-    car.cpp
+    car.cpp \
+    road.cpp
 
 HEADERS  += \
     trafficlight.h \
-    car.h
+    car.h \
+    road.h
 
 FORMS    +=
 
 DISTFILES +=
+
+RESOURCES += \
+    images.qrc
