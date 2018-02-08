@@ -1,6 +1,6 @@
 #ifndef TrafficLight_H
 #define TrafficLight_H
-
+#include "eventpool.h"
 #include <QGraphicsPixmapItem>
 #include <QString>
 #include <QDebug>
@@ -20,9 +20,10 @@ public:
     static const int LEFT = 2;
     static const int RIGHT = 3;
     TrafficLight();
+    EventPool *pool;
     int x,y,dir,state,laststate;
     int getstate();
-    TrafficLight(int, int, int,int);
+    TrafficLight(int, int, int,int,EventPool*);
     QRectF boundingRect() const override;
     QPainterPath shape() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,

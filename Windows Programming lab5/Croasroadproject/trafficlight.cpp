@@ -5,8 +5,9 @@ TrafficLight::TrafficLight()
 {
 
 }
-TrafficLight::TrafficLight(int x, int y, int dir,int state)
-{
+TrafficLight::TrafficLight(int x, int y, int dir,int state,EventPool* pool)
+{   //qDebug() <<pool;
+    this->pool=pool;
     this->x=x;
     this->y=y;
     this->state=state;
@@ -16,13 +17,14 @@ TrafficLight::TrafficLight(int x, int y, int dir,int state)
 
 }
 void TrafficLight::operator ++(int){
+    qDebug() << this->pool;
     switch(state)
-    { case RED:this->state=YELLOW;this->laststate=RED;break;
+    { case RED:this->state=YELLOW;this->laststate=RED;this->pool->add(YELLOW);break;
       case YELLOW:
-        if (this->laststate==RED){this->state=GREEN;}
-        if (this->laststate==GREEN){this->state=RED;}
+        if (this->laststate==RED){this->state=GREEN;this->pool->add(GREEN);}
+        if (this->laststate==GREEN){this->state=RED;this->pool->add(RED);}
             break;
-      case GREEN:this->state=YELLOW;this->laststate=GREEN;break;
+      case GREEN:this->state=YELLOW;this->laststate=GREEN;this->pool->add(YELLOW);break;
    }
 
 }

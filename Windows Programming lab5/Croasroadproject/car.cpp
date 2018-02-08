@@ -7,8 +7,9 @@ Car::Car()
 {
 }
 
-Car::Car(int x, int y, int dir, QString img)
+Car::Car(int x, int y, int dir, QString img,EventPool *pool)
 {
+    this->pool=pool;
 
     this->x=x;
     this->y=y;
@@ -22,7 +23,7 @@ Car::Car(int x, int y, int dir, QString img)
       case LEFT:this->setPos(x-400,y-20);pix = pix.transformed(QTransform().rotate(90));break;
       case RIGHT:this->setPos(x+300,y-80);pix = pix.transformed(QTransform().rotate(270));break;
    }
-    qDebug()<<this->state;
+   // qDebug()<<this->state;
 
 }
 void Car::paint(QPainter *painter, const QStyleOptionGraphicsItem * qs, QWidget * qw)
@@ -49,6 +50,18 @@ void Car::advance(int step)
     cy=scenePos().y();
     //qDebug() << scenePos().x()<< scenePos().y();
    // qDebug() <<cx<<cy;
+    qDebug()<<"HERE"<<this->pool->get();
+    switch(this->pool->get())
+    {   case TrafficLight::RED:
+        step=0;
+        break;
+        case TrafficLight::YELLOW:
+        step=step/2;
+        break;
+        case TrafficLight::GREEN:
+        step=step;
+        break;
+    }
     switch(dir)
     { case UP:
         cy-=step;
@@ -67,17 +80,7 @@ void Car::advance(int step)
         if (cx==-400) cx=300;
         break;
    }
-    switch(this->state)
-    {   case TrafficLight::RED:
-        step=0;
-        break;
-        case TrafficLight::YELLOW:
-        step=step/2;
-        break;
-        case TrafficLight::GREEN:
-        step=step;
-        break;
-    }
+
    setPos(cx,cy);
 
 

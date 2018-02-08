@@ -26,12 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
     trafficlight.cpp \
     car.cpp \
-    road.cpp
+    road.cpp \
+    eventpool.cpp
 
 HEADERS  += \
     trafficlight.h \
     car.h \
-    road.h
+    road.h \
+    eventpool.h
 
 FORMS    +=
 
